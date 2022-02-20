@@ -1,0 +1,3 @@
+_target_: t4clab.tasks.temporal_forecasting_avg.TemporalForecastingTask
+
+lr: 0.001

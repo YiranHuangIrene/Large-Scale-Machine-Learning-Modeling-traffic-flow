@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: t4clab
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: 
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Project 03: Modelling Traffic Flow
+
+## Installation
+
+```sh
+# Use pip-tools to manage dependencies
+$ pip install pip-tools
+
+# Install pinned dependencies
+$ pip-sync
+
+# Install package in editable mode
+$ pip install -e .
+```
+
+## Run the Training
+
+Before you run anything, log into your W&B account with `wandb login`. Then you can run
+model training, for example, as follows.
+```sh
+./train.py data=example model=knn
+```
+
+### Run on SLURM
+
+To submit jobs to the SLURM cluster, set the launcher to `slurm`.
+```sh
+./train.py hydra/launcher=slurm # ... other arguments
+```
+
+

@@ -1,0 +1,4 @@
+_target_: t4clab.models.GNNRes.GNNRes
+
+inout_skipconn: True
+depth: 20

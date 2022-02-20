@@ -1,0 +1,25 @@
+defaults:
+  - data: t4c
+  - model: GNNRes_high_input
+  - task: temporal_forecasting
+  - _self_
+
+entity: mllab2122-traffic
+project: t4clab
+group: explore
+gres: gpu:1
+
+seed: ~
+eval_testset: yes
+
+hydra:
+  job:
+    name: ${group}
+
+trainer:
+  _target_: pytorch_lightning.Trainer
+  gpus: 1
+  max_epochs: 10
+  progress_bar_refresh_rate: 10
+  log_every_n_steps: 1
+  resume_from_checkpoint: ~

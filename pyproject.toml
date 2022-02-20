@@ -1,0 +1,8 @@
+[tool.isort]
+profile = "black"
+known_first_party = ["t4clab"]
+known_third_party = ["wandb"]
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]

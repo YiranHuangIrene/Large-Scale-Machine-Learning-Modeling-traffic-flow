@@ -1,0 +1,8 @@
+_target_: t4clab.models.Unet.Unet
+
+in_channels: 96
+n_classes: 48
+depth: 5
+wf: 6
+padding: True
+batch_norm: True

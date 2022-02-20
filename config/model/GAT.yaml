@@ -1,0 +1,5 @@
+_target_: t4clab.models.GAT.GAT
+
+input_size: 100
+n_channels: 48
+depth: 20

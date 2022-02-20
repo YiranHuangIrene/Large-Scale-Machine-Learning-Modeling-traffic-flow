@@ -1,0 +1,5 @@
+_target_: t4clab.models.GNNRes_hf.GNNRes
+
+inout_skipconn: True
+depth: 20
+n_channels: 10
